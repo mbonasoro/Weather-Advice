@@ -29,7 +29,7 @@
       <dmn:requiredDecision href="#_9B89BD35-737F-40CC-AB27-9566755E489C"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_C8494511-AF8A-447F-AF45-5559B737AE41">
-      <dmn:text>if Name = "" then "Sorry, we don't have enough info to provide a response." else "Hello "+Name+"! "+Weather-Advice</dmn:text>
+      <dmn:text>if Name = "" then "Sorry, we don't have enough info to provide a response." else "Hello "+Name+"! "+ Weather-Advice</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_D63FFF47-F322-4DE1-987A-1FFD67E43372" name="Weather">
@@ -38,7 +38,7 @@
   </dmn:inputData>
   <dmn:decision id="_9B89BD35-737F-40CC-AB27-9566755E489C" name="Weather-Advice">
     <dmn:extensionElements/>
-    <dmn:variable id="_D40CF131-0272-4CC3-910F-293715FE4D72" name="Weather-Advice"/>
+    <dmn:variable id="_D40CF131-0272-4CC3-910F-293715FE4D72" name="Weather-Advice" typeRef="string"/>
     <dmn:informationRequirement id="_30C67FE4-6215-4431-8E73-0AB8613518B5">
       <dmn:requiredInput href="#_D63FFF47-F322-4DE1-987A-1FFD67E43372"/>
     </dmn:informationRequirement>
